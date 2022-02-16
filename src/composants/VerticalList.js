@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 
-import MovieCard from "./composants/MovieCard";
+import MovieCard from "./MovieCard";
 import useStyles from "./VerticalList.style";
 
 function VerticalList({ data, className }) {
@@ -10,7 +10,7 @@ function VerticalList({ data, className }) {
     <ul className={classNames([classes.root, className])}>
       {data.map((entry) => (
         <li key={entry.id} className={classes.item}>
-          <Link to="/">
+          <Link to={`/movies/${entry.id}`} className={classes.link}>
             <MovieCard {...entry} />
           </Link>
         </li>
