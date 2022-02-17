@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 
-import MovieCard from "./MovieCard";
-import useStyles from "./VerticalList.style";
+import MovieCard from "./composants/MovieCard";
+import useStyles from "./composants/VerticalList.style";
 
 function VerticalList({ data, className }) {
   const classes = useStyles();
@@ -18,5 +18,9 @@ function VerticalList({ data, className }) {
     </ul>
   );
 }
+
+VerticalList.defaultProps = {
+  data: [],
+};
 
 export default VerticalList;
