@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Header from "./Header";
-import Home from "./Home";
+import Header from "./composants/Header";
+import Home from "./composants/Home";
+import Movie from "./composants/Movie";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/movies/:id" element={<Movie />} />
         </Routes>
       </main>
     </BrowserRouter>
