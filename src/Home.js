@@ -2,9 +2,9 @@ import { useCallback, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import Input from "./composants/Input";
-import VerticalList from "./composants/VerticalList";
-import useStyles from "./composants/Home.style";
+import Input from "./Input";
+import VerticalList from "./VerticalList";
+import useStyles from "./Home.style";
 
 function Home() {
   const classes = useStyles();

@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-import useStyles from "./composants/Header.style";
+import useStyles from "./Header.style";
 
 function Header() {
   const classes = useStyles();

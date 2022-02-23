@@ -17,9 +17,9 @@ import createSagaMiddleware from "redux-saga";
 
 import { favoritesSlice, moviesSlice } from "./slices";
 import { rootSaga } from "./sagas";
-import Header from "./composants/Header";
-import Home from "./composants/Home";
-import Movie from "./composants/Movie";
+import Header from "./Header";
+import Home from "./Home";
+import Movie from "./Movie";
 
 const persistConfig = {
   key: "root",

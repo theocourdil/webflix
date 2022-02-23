@@ -1,4 +1,4 @@
-import useStyles from "./composants/Input.style.js";
+import useStyles from "./Input.style.js";
 
 function Input({ value, onChange }) {
   const classes = useStyles();

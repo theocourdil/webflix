@@ -1,12 +1,13 @@
+import classNames from "classnames";
 import { Link } from "react-router-dom";
 
-import MovieCard from "./composants/MovieCard";
-import useStyles from "./composants/HorizontalList.style";
+import MovieCard from "./MovieCard";
+import useStyles from "./VerticalList.style";
 
-function HorizontalList({ data }) {
+function VerticalList({ data, className }) {
   const classes = useStyles();
   return (
-    <ul className={classes.root}>
+    <ul className={classNames([classes.root, className])}>
       {data.map((entry) => (
         <li key={entry.id} className={classes.item}>
           <Link to={`/movies/${entry.id}`} className={classes.link}>
@@ -18,4 +19,8 @@ function HorizontalList({ data }) {
   );
 }
 
-export default HorizontalList;
+VerticalList.defaultProps = {
+  data: [],
+};
+
+export default VerticalList;

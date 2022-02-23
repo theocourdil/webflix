@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import classNames from "classnames";
 
 import { favoritesSlice } from "./slices";
-import useStyles from "./composants/MovieCard.style";
+import useStyles from "./MovieCard.style";
 
 function MovieCard({ id, poster_path, title }) {
   const imageURL =

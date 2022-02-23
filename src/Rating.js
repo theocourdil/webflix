@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import useStyles from "./composants/Rating.style";
+import useStyles from "./Rating.style";
 
 const MAX_STARS = 5;
 

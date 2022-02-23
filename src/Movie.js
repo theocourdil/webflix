@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 
 import data from "./data.json";
-import Genre from "./composants/Genre";
-import HorizontalList from "./composants/HorizontalList";
-import useStyles from "./composants/Movie.style";
-import Rating from "./composants/Rating";
+import Genre from "./Genre";
+import HorizontalList from "./HorizontalList";
+import useStyles from "./Movie.style";
+import Rating from "./Rating";
 
 const OVERVIEW_SIZE = 120;
 
